@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FITXBaseViewController.h"
 
-@interface FITXView2Controller : UIViewController
+@interface FITXView2Controller : FITXBaseViewController
 
 @end

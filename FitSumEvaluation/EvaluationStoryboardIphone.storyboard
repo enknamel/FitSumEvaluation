@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="0Ye-dy-gTw">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="0Ye-dy-gTw">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -23,22 +23,24 @@
         <scene sceneID="wvf-ZP-W8o">
             <objects>
                 <viewController id="kRw-DP-2cj" customClass="FITXView1Controller" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="pYZ-Zr-CMh"/>
-                        <viewControllerLayoutGuide type="bottom" id="6HU-uj-Dc5"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="ghv-p5-7hw">
+                    <view key="view" contentMode="scaleToFill" id="ghv-p5-7hw" customClass="FITXGradientView">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JFv-9y-Pcn">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Q5k-x6-LD0">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="kRw-DP-2cj" id="tiW-Si-loW"/>
+                                    <outlet property="delegate" destination="kRw-DP-2cj" id="otN-dH-Yg9"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="JFv-9y-Pcn">
                                 <rect key="frame" x="254" y="518" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="HWl-M7-FQB"/>
-                                    <constraint firstAttribute="width" constant="46" id="LkW-ng-71n"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                                 <state key="normal" title="Next">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -47,12 +49,11 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="bottom" secondItem="JFv-9y-Pcn" secondAttribute="bottom" constant="20" id="DCS-48-g1h"/>
-                            <constraint firstAttribute="trailing" secondItem="JFv-9y-Pcn" secondAttribute="trailing" constant="20" id="cCT-i3-M3w"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="K2Q-ak-fNV"/>
+                    <connections>
+                        <outlet property="tableView" destination="Q5k-x6-LD0" id="LVS-Pk-kvN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4M5-R6-a1e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -62,59 +63,84 @@
         <scene sceneID="QFU-fX-E56">
             <objects>
                 <viewController id="z8c-oz-g8x" customClass="FITXView2Controller" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="3Av-3T-FWQ"/>
-                        <viewControllerLayoutGuide type="bottom" id="FId-px-lSR"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="2Fg-oS-t7B">
+                    <view key="view" contentMode="scaleToFill" id="2Fg-oS-t7B" customClass="FITXGradientView">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R2j-bc-tbJ">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="R2j-bc-tbJ">
                                 <rect key="frame" x="254" y="518" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="5dj-kk-hVO"/>
-                                    <constraint firstAttribute="width" constant="46" id="xX5-79-Xpi"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                                 <state key="normal" title="Next">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="nPd-GN-fFt" kind="push" id="dYU-1Z-MDv"/>
+                                    <segue destination="H0C-r2-4Jk" kind="push" id="8Wy-3B-53k"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" id="zA0-bn-XZ3">
+                                <rect key="frame" x="35" y="159" width="250" height="250"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" id="vW6-dD-Z2q">
+                                        <rect key="frame" x="0.0" y="0.0" width="250" height="250"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <color key="backgroundColor" red="0.98915166440000002" green="0.28579625450000001" blue="0.08571884917" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Jcs-Dg-M2R">
+                                <rect key="frame" x="138" y="68" width="44" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="+">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="fillColorInCircle:" destination="z8c-oz-g8x" eventType="touchUpInside" id="5fY-tW-KWt"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="bottom" secondItem="R2j-bc-tbJ" secondAttribute="bottom" constant="20" id="GP0-Pt-uok"/>
-                            <constraint firstAttribute="trailing" secondItem="R2j-bc-tbJ" secondAttribute="trailing" constant="20" id="csh-1r-ADq"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="zZ1-bU-JAh"/>
+                    <connections>
+                        <outlet property="viewInnerCircle" destination="vW6-dD-Z2q" id="Onb-u9-HlJ"/>
+                        <outlet property="viewOuterCircle" destination="zA0-bn-XZ3" id="avs-1P-TLA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3EN-uQ-hOt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="909" y="60"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="U9G-fH-btN">
+        <!--View3 Controller-->
+        <scene sceneID="eHd-xN-Cq8">
             <objects>
-                <viewController id="nPd-GN-fFt" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="YwI-9F-tD1"/>
-                        <viewControllerLayoutGuide type="bottom" id="hXu-Kq-yRg"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Whz-5C-kb0">
+                <viewController id="H0C-r2-4Jk" customClass="FITXView3Controller" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XP6-Ql-me1" customClass="FITXGradientView">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="nmE-qT-mrZ">
+                                <rect key="frame" x="208" y="518" width="92" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <state key="normal" title="Back to root">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backToRoot:" destination="H0C-r2-4Jk" eventType="touchUpInside" id="Gc7-kO-hSJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="emg-qd-GiK" customClass="FITXView3Controller"/>
+                    <navigationItem key="navigationItem" id="2jz-NL-MEE"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="riI-Wb-aGB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vmM-rc-c1g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1333" y="61"/>
+            <point key="canvasLocation" x="1352" y="60"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

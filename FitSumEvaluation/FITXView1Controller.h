@@ -10,4 +10,6 @@
 
 @interface FITXView1Controller : UIViewController
 
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
+
 @end

@@ -22,6 +22,11 @@
 		CF8646371894B59500B1BDEC /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF86461B1894B59500B1BDEC /* CoreData.framework */; };
 		CF86463F1894B59500B1BDEC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF86463D1894B59500B1BDEC /* InfoPlist.strings */; };
 		CF8646411894B59500B1BDEC /* FitSumEvaluationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8646401894B59500B1BDEC /* FitSumEvaluationTests.m */; };
+		CF86464B1894B72A00B1BDEC /* EvaluationStoryboardIphone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF86464A1894B72A00B1BDEC /* EvaluationStoryboardIphone.storyboard */; };
+		CF86464E1894C0C400B1BDEC /* FITXView1Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = CF86464D1894C0C400B1BDEC /* FITXView1Controller.m */; };
+		CF8646521894CB6600B1BDEC /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = CF8646511894CB6600B1BDEC /* README.md */; };
+		CF8646551894CBDD00B1BDEC /* FITXView2Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8646541894CBDD00B1BDEC /* FITXView2Controller.m */; };
+		CF8646581894CBE900B1BDEC /* FITXView3Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8646571894CBE900B1BDEC /* FITXView3Controller.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,14 @@
 		CF86463C1894B59500B1BDEC /* FitSumEvaluationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FitSumEvaluationTests-Info.plist"; sourceTree = "<group>"; };
 		CF86463E1894B59500B1BDEC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CF8646401894B59500B1BDEC /* FitSumEvaluationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FitSumEvaluationTests.m; sourceTree = "<group>"; };
+		CF86464A1894B72A00B1BDEC /* EvaluationStoryboardIphone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = EvaluationStoryboardIphone.storyboard; sourceTree = "<group>"; };
+		CF86464C1894C0C400B1BDEC /* FITXView1Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FITXView1Controller.h; sourceTree = "<group>"; };
+		CF86464D1894C0C400B1BDEC /* FITXView1Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FITXView1Controller.m; sourceTree = "<group>"; };
+		CF8646511894CB6600B1BDEC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		CF8646531894CBDD00B1BDEC /* FITXView2Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FITXView2Controller.h; sourceTree = "<group>"; };
+		CF8646541894CBDD00B1BDEC /* FITXView2Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FITXView2Controller.m; sourceTree = "<group>"; };
+		CF8646561894CBE900B1BDEC /* FITXView3Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FITXView3Controller.h; sourceTree = "<group>"; };
+		CF8646571894CBE900B1BDEC /* FITXView3Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FITXView3Controller.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +133,14 @@
 				CF86462C1894B59500B1BDEC /* Images.xcassets */,
 				CF8646291894B59500B1BDEC /* FitSumEvaluation.xcdatamodeld */,
 				CF86461E1894B59500B1BDEC /* Supporting Files */,
+				CF86464A1894B72A00B1BDEC /* EvaluationStoryboardIphone.storyboard */,
+				CF86464C1894C0C400B1BDEC /* FITXView1Controller.h */,
+				CF86464D1894C0C400B1BDEC /* FITXView1Controller.m */,
+				CF8646511894CB6600B1BDEC /* README.md */,
+				CF8646531894CBDD00B1BDEC /* FITXView2Controller.h */,
+				CF8646541894CBDD00B1BDEC /* FITXView2Controller.m */,
+				CF8646561894CBE900B1BDEC /* FITXView3Controller.h */,
+				CF8646571894CBE900B1BDEC /* FITXView3Controller.m */,
 			);
 			path = FitSumEvaluation;
 			sourceTree = "<group>";
@@ -229,7 +250,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF86464B1894B72A00B1BDEC /* EvaluationStoryboardIphone.storyboard in Resources */,
 				CF8646221894B59500B1BDEC /* InfoPlist.strings in Resources */,
+				CF8646521894CB6600B1BDEC /* README.md in Resources */,
 				CF86462D1894B59500B1BDEC /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,6 +275,9 @@
 				CF8646241894B59500B1BDEC /* main.m in Sources */,
 				CF8646281894B59500B1BDEC /* FITXAppDelegate.m in Sources */,
 				CF86462B1894B59500B1BDEC /* FitSumEvaluation.xcdatamodeld in Sources */,
+				CF86464E1894C0C400B1BDEC /* FITXView1Controller.m in Sources */,
+				CF8646551894CBDD00B1BDEC /* FITXView2Controller.m in Sources */,
+				CF8646581894CBE900B1BDEC /* FITXView3Controller.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,7 +1,7 @@
 FitSum 1 Hour Evaluation Project
 =====================================
 
-
+To submit please send a pull request to the public github project https://github.com/enknamel/FitSumEvaluation
 If you do not finish all tasks in an hour please submit what you
 
 [ ] All screens should have the top 80% green and the bottom 20% blue no matter what form factor is used

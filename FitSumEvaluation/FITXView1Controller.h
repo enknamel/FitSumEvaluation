@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FITXBaseViewController.h"
+#import "FITXCustomCell.h"
 
-@interface FITXView1Controller : UIViewController
+@interface FITXView1Controller : FITXBaseViewController<UITableViewDelegate, UITableViewDataSource, FITXCustomCellDelegate>
 
+@property (nonatomic, strong) IBOutlet UITableView *tableView;
 @end
